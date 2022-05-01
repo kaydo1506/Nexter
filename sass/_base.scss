@@ -1,6 +1,6 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #b28451;
+$color-primary: #c67263;
+$color-primary-dark: #8b4c24;
 
 $color-secondary: #101d2c;
 
@@ -49,7 +49,8 @@ body {
     /* min-content - the div will simply have the height of its content */
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns:
-        [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+        [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+        [center-start] repeat(
             8,
             [col-start] minmax(min-content, 14rem) [col-end]
         )
@@ -58,7 +59,10 @@ body {
     @media only screen and (max-width: $bp-large) {
         grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
         grid-template-columns:
-            [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+            [full-start] minmax(6rem, 1fr) [center-start] repeat(
+                8,
+                [col-start] minmax(min-content, 14rem) [col-end]
+            )
             [center-end] minmax(6rem, 1fr) [full-end];
     }
     @media only screen and (max-width: $bp-medium) {
